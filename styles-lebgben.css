@@ -4,3 +4,16 @@ body {
 h1 {
     text-align: center;
 }
+.navigation {
+    background-color: rgb(100, 150, 255);
+    color: white;
+    text-decoration: none;
+}
+.hide {
+    background-color: #ff8f48;
+    color: #ff8f48;
+}
+.avertissement {
+    color: red;
+    text-decoration: underline;
+}
