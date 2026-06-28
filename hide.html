@@ -3,16 +3,24 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles-lebgben.css">
+        <script src="navigation.js"></script>
         <title>Blog de LeBGBen - Mes contenus</title>
     </head>
     <body>
         <header>
-            <h1>Mes contenus, <span class="avertissement">/!\ Public averti !</span></h1>
-            <nav>
-                <a class="navigation" href="index.html">Accueil</a></li>
-                <a class="navigation" href="found-me.html">Où me trouver</a></li>
-            </nav>
-            <p></p>
+            <h1>Mes contenus<!--, <span class="avertissement">/!\ Public averti !</span>--></h1>
+            <nav id="nav"></nav><script>nav();</script>
+            <p>Cliquez <a id="contenus-link" class="a-non-souligne" href="contenus.html">ici</a> pour accéder aux contenus (Uniquement sur Windows !)</p>
         </header>
+        <script>
+            const contenusLink = document.getElementById('contenus-link');
+            const isWindows = /Windows/i.test(navigator.userAgent);
+
+            if (!isWindows) {
+                window.location.href = 'erreur-systeme.html';
+            } else {
+                contenusLink.setAttribute('href', 'contenus-averti.html');
+            }
+        </script>
     </body>
 </html>

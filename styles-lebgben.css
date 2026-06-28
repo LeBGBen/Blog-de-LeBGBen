@@ -17,3 +17,9 @@ h1 {
     color: red;
     text-decoration: underline;
 }
+.a-non-souligne {
+    text-decoration: none;
+}
+a {
+    color: #123456
+}

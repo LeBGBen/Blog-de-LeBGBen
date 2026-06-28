@@ -1,16 +1,28 @@
+Copier ce code dans la nouvelle page :
+
 <!DOCTYPE html>
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles-lebgben.css">
         <script src="navigation.js"></script>
-        <title>Blog de LeBGBen</title>
+        <title>'Titre'</title>
     </head>
     <body>
         <header>
-            <h1>Blog de LeBGBen</h1>
+            <h1>'Titre'</h1>
             <nav id="nav"></nav><script>nav();</script>
-            <p>Bienvenue sur mon blog !</p>
         </header>
+        
     </body>
 </html>
+
+
+Pour inclure la navigation :
+- Dans le head :
+
+<script src="navigation.js"></script>
+
+- Dans l'emplacement de la navigation :
+
+<nav id="nav"></nav><script>nav();</script>
