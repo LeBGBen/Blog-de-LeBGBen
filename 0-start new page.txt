@@ -1,4 +1,4 @@
-Copier ce code dans la nouvelle page :
+    Copier ce code dans la nouvelle page :
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -18,11 +18,11 @@ Copier ce code dans la nouvelle page :
 </html>
 
 
-Pour inclure la navigation :
-- Dans le head :
+    Pour inclure la navigation :
+    - Dans le head :
 
 <script src="navigation.js"></script>
 
-- Dans l'emplacement de la navigation :
+    - Dans l'emplacement de la navigation :
 
 <nav id="nav"></nav><script>nav();</script>
