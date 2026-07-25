@@ -1,3 +1,4 @@
+    Entrer le nom de la page dans la liste du fichier contenus-averti.html
     Copier ce code dans la nouvelle page :
 
 <!DOCTYPE html>
