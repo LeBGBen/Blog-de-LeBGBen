@@ -41,3 +41,10 @@ h1 {
 a {
     color: #123456
 }
+.img-intro {
+    width: 80%;
+    height: auto;
+    position: relative;
+    left: 10%;
+    border-radius: 20px;
+}
