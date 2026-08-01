@@ -42,9 +42,11 @@ a {
     color: #123456
 }
 .img-intro {
-    width: 80%;
+    width: 60%;
     height: auto;
-    position: relative;
-    left: 10%;
+    margin: 5px 20% 0 20%;
     border-radius: 20px;
+}
+.no-navigation {
+    position: static;
 }

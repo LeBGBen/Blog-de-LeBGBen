@@ -1,0 +1,46 @@
+body {
+    /*background-image: url("bg-huysmans-retouchee.jpg");*/
+    background-image: url("bg-huysmans.webp");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+    color: rgb(223, 223, 23);
+    font-size: 20px;
+    text-decoration: underline;
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+}
+
+div {
+    text-align: justify;
+    color: white;
+    font-size: 20px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 70px;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    font-size: 33px;
+}
+
+h4 {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}

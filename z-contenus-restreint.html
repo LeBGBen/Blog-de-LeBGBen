@@ -15,52 +15,7 @@
         <p>Entrez le code d'accès pour télécharger le fichier.</p>
         <input type="password" id="acces" placeholder="Entrez le code d'accès">
         <button type="submit" id="b-acces">Entrer</button>
-        <script>
-            var protectedPages = [
-                'contenus-averti',
-                'contenus',
-                'erreur-systeme',
-                'found-me',
-                'hide',
-                'navigation'
-                //Compléter cette liste au besoin
-            ];
-
-            document.getElementById('b-acces').addEventListener('click', function () {
-                var code = document.getElementById('acces').value.trim();
-
-                if (!code) {
-                    window.location.href = 'erreur-systeme.html';
-                    return;
-                }
-
-                if (protectedPages.indexOf(code) !== -1) {
-                    window.location.href = 'erreur-systeme.html';
-                    return;
-                }
-
-                var targetUrl = code + '.html';
-
-                fetch(targetUrl, { method: 'GET' })
-                    .then(function (response) {
-                        if (response.ok && protectedPages.indexOf(code) === -1) {
-                            window.location.href = targetUrl;
-                        } else {
-                            window.location.href = 'erreur-systeme.html';
-                        }
-                    })
-                    .catch(function () {
-                        window.location.href = 'erreur-systeme.html';
-                    });
-            });
-
-            document.getElementById('acces').addEventListener('keydown', function (event) {
-                if (event.key === 'Enter') {
-                    event.preventDefault();
-                    document.getElementById('b-acces').click();
-                }
-            });
-        </script>
+        <script src="protected-pages-input.js"></script>
         <!-- <ul>
             <li>1 - <a href="contenu-a1.html" target="_blank">Contenu 1</a></li>
             <li>2 - <a href="contenu-a2.html" target="_blank">Contenu 2</a></li>

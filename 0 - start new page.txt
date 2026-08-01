@@ -1,4 +1,4 @@
-    Entrer le nom de la page dans la liste du fichier contenus-averti.html
+    Entrer le nom de la page dans la liste du fichier protected-pages-input.js
     Copier ce code dans la nouvelle page :
 
 <!DOCTYPE html>
