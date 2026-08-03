@@ -13,20 +13,21 @@ h1 {
     top: 35px;
 }
 .navigation {
-    background-color: rgb(100, 150, 255);
+    background-color: rgba(100, 150, 255, 0.8);
     color: white;
     text-decoration: none;
     border-radius: 5px;
     box-shadow: 2px 2px 5px 2px gray;
     padding: 5px;
     margin: 2px;
-}
+    z-index: 10;
+} /* Pour chaque bouton de navigation individuellement */
 .nav-f {
     position: fixed;
     top: 0;
     left: 0;
     padding: 15px;
-}
+} /* Ensemble des boutons de navigation */
 .hide {
     background-color: #ff8f48;
     color: #ff8f48;
@@ -38,7 +39,7 @@ h1 {
 .a-non-souligne {
     text-decoration: none;
 }
-a {
+a, .username {
     color: #123456
 }
 .img-intro {
