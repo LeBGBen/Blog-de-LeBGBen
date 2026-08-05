@@ -41,7 +41,7 @@ h1 {
     position: fixed;
     top: 0;
     left: 0;
-    padding: 15px;
+    padding: 2vmax 0 0 1vmax;
 } /* Ensemble des boutons de navigation */
 .hide {
     background-color: #ff8f48;
