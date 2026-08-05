@@ -8,24 +8,24 @@ body {
     margin: 0 auto;
 }
 p, li {
-    font-size: 2vmax;
+    /* font-size: 2vmax; */ /* cf @media plus bas */
     margin: 1vw;
 }
 h1 {
     text-align: center;
-    border: 2px dotted black;
+    border: 0.5vmin dotted black;
     background-color: #dddddd;
     border-radius: 50px;
     box-shadow: 0px 0px 5px 2px #404040;
-    margin: 30px 1vw;
+    margin: 3vmax 1vw;
     position: relative;
-    top: 35px;
-    font-size: 4vmax;
+    top: 4vmax;
+    /* font-size: 4vmax; */ /* cf @media plus bas */
     width: 96vw;
 }
-h2 {
-    font-size: 3vmax;
-}
+/* h2 {
+    font-size: 3vmax;   cf @media plus bas
+} */
 .navigation {
     background-color: rgba(100, 150, 255, 0.8);
     color: white;
@@ -35,7 +35,7 @@ h2 {
     padding: 5px;
     margin: 2px;
     z-index: 10;
-    font-size: 2vmax;
+    /* font-size: 2vmax; */ /* cf @media plus bas */
 } /* Pour chaque bouton de navigation individuellement */
 .nav-f {
     position: fixed;
@@ -77,5 +77,16 @@ img {
     body {
         width: 1000px;
         margin: 0 auto;
+    }
+}
+@media (max-width: 1099px) {
+    p, li, .navigation {
+        font-size: 2vmax;
+    }
+    h1 {
+        font-size: 4vmax;
+    }
+    h2 {
+        font-size: 3vmax;
     }
 }
