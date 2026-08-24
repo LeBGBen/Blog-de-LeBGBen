@@ -73,6 +73,9 @@ img {
 .no-navigation {
     position: static;
 }
+a:hover, #b-acces:hover, .username:hover {
+    font-weight: bold;
+}
 @media (min-width: 1100px) {
     body {
         width: 1000px;

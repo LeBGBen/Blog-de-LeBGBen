@@ -12,8 +12,10 @@
             <nav id="nav"></nav><script>nav();</script>
         </header>
         <p>Entrez le code d'accès pour télécharger le fichier.</p>
-        <input type="password" id="acces" placeholder="Entrez le code d'accès">
-        <button type="submit" id="b-acces">Entrer</button>
+        <div>
+            <input type="password" id="acces" placeholder="Entrez le code d'accès" style="width: 30vmax; max-width: 80vw;">
+            <button type="submit" id="b-acces">Entrer</button>
+        </div>
         <p>Mode d'emploi : vous devez modifier l'extension du fichier téléchargé sur .zip, extraire le fichier interne et répéter cette opération pour chaque fichier, jusqu'à trouver les contenus.</p>
         <script src="protected-pages-input.js"></script>
         <script>
@@ -31,7 +33,7 @@ document.getElementById('b-acces').addEventListener('click', function () {
         return;
     }
 
-    var targetUrl = code + '.html';
+    var targetUrl = 'contents/(!)-content/' + code + '.html';
 
     fetch(targetUrl, { method: 'GET' })
     .then(function (response) {
