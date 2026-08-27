@@ -5,6 +5,7 @@ var protectedPages = [
                 '../../found-me',
                 '../../hide',
                 '../../navigation',
+                '../../music',
                 '../../img-intro',
                 '../../README',
                 '../contents/Naturalisme/autres-arts',
