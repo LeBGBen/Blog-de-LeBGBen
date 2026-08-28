@@ -44,8 +44,8 @@ h1 {
     padding: 2vmax 0 0 1vmax;
 } /* Ensemble des boutons de navigation */
 .hide {
-    background-color: #ff8f48;
-    color: #ff8f48;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0);
     position: fixed;
     bottom: 0;
     right: 0;

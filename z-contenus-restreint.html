@@ -17,8 +17,26 @@
             <button type="submit" id="b-acces">Entrer</button>
         </div>
         <p>Mode d'emploi : vous devez modifier l'extension du fichier téléchargé sur .zip, extraire le fichier interne et répéter cette opération pour chaque fichier, jusqu'à trouver les contenus.</p>
-        <script src="protected-pages-input.js"></script>
+        <!-- <script src="protected-pages-input.js"></script> -->
         <script>
+
+/* var protectedPages = [
+                '../../contenus-averti',
+                '../../contenus',
+                '../../erreur-systeme',
+                '../../found-me',
+                '../../hide',
+                '../../navigation',
+                '../../music',
+                '../../img-intro',
+                '../../README',
+                '../contents/Naturalisme/autres-arts',
+                '../contents/Naturalisme/diapo',
+                '../contents/Naturalisme/naturalisme',
+                '../contents/Naturalisme/txt-etude',
+                '../contents/Galerie/galerie'
+                //Compléter cette liste au besoin
+            ]; */
 
 document.getElementById('b-acces').addEventListener('click', function () {
     var code = document.getElementById('acces').value.trim();
@@ -28,12 +46,17 @@ document.getElementById('b-acces').addEventListener('click', function () {
         return;
     }
 
+    if (code.includes('../')) {
+        window.location.href = 'erreur-systeme.html';
+        return;
+    }
+
     if (protectedPages.indexOf(code) !== -1) {
         window.location.href = 'erreur-systeme.html';
         return;
     }
 
-    var targetUrl = 'contents/(!)-content/' + code + '.html';
+    var targetUrl = 'contents/(!)-content/' + code + '/' + code + '.html';
 
     fetch(targetUrl, { method: 'GET' })
     .then(function (response) {

@@ -1,4 +1,3 @@
-    Entrer le nom de la page dans la liste du fichier protected-pages-input.js
     Copier ce code dans la nouvelle page :
 
 <!DOCTYPE html>
@@ -27,3 +26,6 @@
     - Dans l'emplacement de la navigation :
 
 <nav id="nav"></nav><script>nav();</script>
+
+
+    Code (!)-contenu : 14s4reis7sod332set2ni5ertse8r1servueO0
