@@ -102,6 +102,7 @@ img {
     border-radius: 2vmax;
     margin: 1.5vw;
     box-shadow: 1vmin 1vmin 2vmin 0.5vmin rgba(0, 0, 0, 0.6);
+    background-color: black;
 }
 .nav-menu {
     display: none;
@@ -139,6 +140,9 @@ a:hover, #b-acces:hover, .username:hover {
     body {
         width: 1000px;
         margin: 0 auto;
+    }
+    .img-container-year a img {
+        width: 370px;
     }
 }
 @media (max-width: 1099px) {
