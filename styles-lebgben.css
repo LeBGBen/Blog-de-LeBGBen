@@ -202,5 +202,6 @@ a:active, #b-acces:active, .username:active {
         box-shadow: 0 0 3vmax 0 black inset;
         width: 100vw;
         min-height: 100vh;
+        padding: 10px;
     }
 }
