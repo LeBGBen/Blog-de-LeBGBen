@@ -115,11 +115,15 @@ img {
 .nav-menu {
     display: none;
 }
-.nav-f #nav-points {
+.nav-f a #nav-points {
     transition: transform 0.2s ease;
 }
-#nav-points {
-    width: 7vmax;
+.nav-f > a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 a:hover, #b-acces:hover, .username:hover {
     font-weight: bold;
@@ -146,15 +150,12 @@ a:hover, #b-acces:hover, .username:hover {
     display: block;
     margin: 1vmax 0;
 }
-.nav-f:hover #nav-points {
-    transform: rotate(180deg);
-}
-.nav-f:hover #nav-points a {
+.nav-f:hover a #nav-points {
+    transform: rotate(90deg);
     box-shadow: 0 0 5px 2px gray;
     text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 }
 .nav-f:hover {
-    width: 15vw;
     height: 20vh;
 }
 .img-container-year a img:hover {
