@@ -208,4 +208,7 @@ a:active, #b-acces:active, .username:active {
     .navigation {
         border-radius: 10px;
     }
+    #eclipse {
+        font-size: 2vmax;
+    }
 }
