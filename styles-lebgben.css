@@ -15,7 +15,7 @@
 }
 .dark-mode {
     --text-color: white;
-    --bg-color: #darkblue;
+    --bg-color: darkblue;
     --h1-bg: #444444;
     --h1-border: white;
     --link-color: #abcdef;
