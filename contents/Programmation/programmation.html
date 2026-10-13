@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="../../styles-lebgben.css">
+        <link rel="icon" href="../../icon.svg">
         <script src="navigation.js"></script>
         <title>Blog de LeBGBen - Mes programmes</title>
     </head>
@@ -12,8 +13,32 @@
             <h1>Mes programmes</h1>
             <nav id="nav"></nav><script>nav();</script>
         </header>
-        <ul>
-            <li><a href="https://my.numworks.com/python/lebgben" target="_blank">Mes scripts Python pour NumWorks</a></li>
-        </ul>
+        <div class="onglets">
+            <input type="radio" id="onglet1" name="onglet">
+            <label for="onglet1">Python</label>
+            <input type="radio" id="onglet2" name="onglet">
+            <label for="onglet2">C++</label>
+            <input type="radio" id="onglet3" name="onglet">
+            <label for="onglet3">HTML</label>
+            <input type="radio" id="onglet4" name="onglet">
+            <label for="onglet4">Scratch</label>
+            <br>
+            <div id="content1" class="onglet">
+                <ul>
+                    <li><a href="https://my.numworks.com/python/lebgben" target="_blank">Mes scripts Python pour NumWorks</a></li>
+                </ul>
+            </div>
+            <div id="content2" class="onglet">
+                <p>À venir</p>
+            </div>
+            <div id="content3" class="onglet">
+                <p>À venir</p>
+            </div>
+            <div id="content4" class="onglet">
+                <ul>
+                    <li><a href="https://scratch.mit.edu/users/BG-2010/" target="_blank">Mon profil Scratch</a></li>
+                </ul>
+            </div>
+        </div>
     </body>
 </html>

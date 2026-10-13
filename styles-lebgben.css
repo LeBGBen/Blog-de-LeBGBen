@@ -159,6 +159,37 @@ img {
     align-items: center;
     text-align: center;
 }
+.onglets {
+    display: block;
+    border: 0.5vmin dotted var(--h1-border);
+    padding: 2vw;
+    border-radius: 2vw;
+    width: 80%;
+    align-items: center;
+    margin-top: 3vmin;
+}
+/*.onglet-header {
+
+}*/
+.onglets input {
+    display: none;
+}
+.onglets label {
+    display: inline-block;
+    cursor: pointer;
+    background-color: rgba(100, 150, 255, 0.8);
+    color: var(--nav-color);
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px var(--nav-shadow-1) var(--nav-shadow-2) var(--main-shadow);
+    padding: 1vh 1vw;
+    margin: 2px 0.5vw;
+    transition: transform 0.2s ease;
+}
+.onglet {
+    display: none;
+    margin: 3vw;
+}
 a:hover, #b-acces:hover, .username:hover {
     font-weight: bold;
     text-shadow: 2px 2px 2px var(--tr-shadow);
@@ -193,12 +224,28 @@ p:hover, li:hover {
     transform: translateX(1vmin);
     text-shadow: 1px 1px 1px var(--tr-shadow); /*Ici la valeur de l'ombrze était rgba(0, 0, 0, 0.3). peut-être faut-il la remettre comme cela...*/
 }
+.onglets label:hover {
+    transform: translateY(-0.5vmin);
+    text-shadow: 1px 1px 1px var(--tr-shadow);
+}
 .img-container-year a img:active {
     transform: scale(0.95);
 }
 a:active, #b-acces:active, .username:active {
     text-shadow: 0 0 0 var(--tr-shadow);
     transform: scale(0.8);
+}
+#onglet1:checked ~ #content1,
+#onglet2:checked ~ #content2,
+#onglet3:checked ~ #content3,
+#onglet4:checked ~ #content4 {
+    display: block;
+}
+#onglet1:checked + label,
+#onglet2:checked + label,
+#onglet3:checked + label,
+#onglet4:checked + label {
+    border: 2px solid var(--link-color);
 }
 @media (min-width: 1100px) {
     body {
