@@ -175,7 +175,8 @@ img {
     display: none;
 }
 .onglets label {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     cursor: pointer;
     background-color: rgba(100, 150, 255, 0.8);
     color: var(--nav-color);
@@ -189,6 +190,11 @@ img {
 .onglet {
     display: none;
     margin: 3vw;
+}
+.icons {
+    height: 16px;
+    width: auto;
+    margin-right: 4px;
 }
 a:hover, #b-acces:hover, .username:hover {
     font-weight: bold;
@@ -278,8 +284,12 @@ a:active, #b-acces:active, .username:active {
     #eclipse {
         font-size: 2vmax;
     }
+    .icons {
+        height: 2vmax;
+        margin-right: 0.5vmax;
+    }
 }
-@media (min-width: 718px) {
+@media (min-width: 768px) {
     .nav-menu {
         display: flex;
         flex-direction: row;
@@ -290,7 +300,7 @@ a:active, #b-acces:active, .username:active {
         display: none;
     }
 }
-@media (max-width: 717px) {
+@media (max-width: 767px) {
     .nav-f:hover .nav-menu {
         display: block;
         position: absolute;
