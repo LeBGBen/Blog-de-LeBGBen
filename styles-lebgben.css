@@ -196,6 +196,18 @@ img {
     width: auto;
     margin-right: 4px;
 }
+#index-icon {
+    height: 4vmax;
+    width: auto;
+    padding: 0;
+    transition: transform 0.2s ease, padding 0.2s ease;
+}
+#index-icon-container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 1vmax;
+}
 a:hover, #b-acces:hover, .username:hover {
     font-weight: bold;
     text-shadow: 2px 2px 2px var(--tr-shadow);
@@ -233,6 +245,10 @@ p:hover, li:hover {
 .onglets label:hover {
     transform: translateY(-0.5vmin);
     text-shadow: 1px 1px 1px var(--tr-shadow);
+}
+#index-icon:hover {
+    transform: scale(1.2);
+    padding: 0.2vmax;
 }
 .img-container-year a img:active {
     transform: scale(0.95);
