@@ -208,6 +208,10 @@ img {
     right: 0;
     padding: 1vmax;
 }
+.emoji {
+    transition: none;
+    text-shadow: none;
+}
 a:hover, #b-acces:hover, .username:hover {
     font-weight: bold;
     text-shadow: 2px 2px 2px var(--tr-shadow);
