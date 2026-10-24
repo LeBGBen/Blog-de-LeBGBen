@@ -144,7 +144,10 @@ img {
     margin: 1.5vw;
     box-shadow: 1vmin 1vmin 2vmin 0.5vmin var(--tr-shadow);
     background-color: black;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    cursor: pointer;
+    transform: none;
+    opacity: 1;
 }
 .nav-menu {
     display: none;
