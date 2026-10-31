@@ -377,7 +377,7 @@ a:active, #b-acces:active, .username:active {
     h1, .welcome {
         font-size: 4vmax;
     }
-    h2 {
+    h2, .bouton-bascule-container {
         font-size: 3vmax;
     }
     body {
