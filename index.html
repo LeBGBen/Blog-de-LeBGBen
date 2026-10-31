@@ -8,8 +8,8 @@
         <script src="navigation.js"></script>
         <title>Blog de LeBGBen</title>
     </head>
-    <body class="dark-mode">
-    <!--<body>-->
+    <body>
+        <script src="script-lebgben.js"></script>
         <header>
             <h1>Blog de LeBGBen</h1>
             <nav id="nav"></nav><script>nav();</script>
@@ -31,11 +31,28 @@
                     <!-- <li>Un onglet "<a href="music.html" class="a-non-souligne">Musique</a>" est maintenant disponible dans la navigation !</li> -->
                     <!-- <li>Les photos sont arrivées dans la <a href="contents/Galerie/galerie.html" class="a-non-souligne">galerie</a> disponible dans les contenus !</li> -->
                     <li>La page <a href="contents/Programmation/programmation.html" class="a-non-souligne">Programmation</a> a été modernisée : elle dispose maintenant d'onglets pour chaque langage !</li>
-                    <li>Le blog est passé en mode sombre ! Bientôt une fonction pour changer entre les deux !</li>
+                    <!--<li>Le blog est passé en mode sombre ! Bientôt une fonction pour changer entre les deux !</li>-->
                     <li>Le blog a une icône d'onglet !</li>
                     <li>Dans la page "<a href="music.html" class="a-non-souligne">Musique</a>" ou la page "<a href="contenus.html" class="a-non-souligne">Contenus</a>", vous pouvez accéder à mes créations musicales !</li>
+                    <li>Le thème du blog est maintenant disponible ! Il peut être changé dans la page <a href="settings.html" class="a-non-souligne">Paramètres</a>.</li>
                 </ul>
             </div>
         </div>
+        <div id="set-theme">
+            <div>
+                <span class="welcome">Bienvenue sur le blog de LeBGBen !</span>
+                <h2>Selectionner un thème :</h2>
+                <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; width: 100%;">
+                    <a class="setting-btn" onclick="setTheme('light')">Thème clair (par défaut)</a>
+                    <a class="setting-btn" onclick="setTheme('dark')">Thème sombre</a>
+                </div>
+                <p>Vous pourrez modifier plus tard ce paramètre dans la page <a class="a-non-souligne" href="settings.html">Paramètres</a></p>
+            </div>
+        </div>
+        <script>
+            if (localStorage.getItem("Theme") === null || localStorage.getItem("Theme") === "") {
+                document.getElementById("set-theme").style.display = "block";
+            }
+        </script>
     </body>
 </html>

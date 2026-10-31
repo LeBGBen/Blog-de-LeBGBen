@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles-lebgben.css">
+        <link rel="icon" href="icon.svg">
+        <script src="navigation.js"></script>
+        <title>Blog de LeBGBen - Paramètres</title>
+    </head>
+    <body>
+        <script src="script-lebgben.js"></script>
+        <header>
+            <h1>Paramètres</h1>
+            <nav id="nav"></nav><script>nav();</script>
+        </header>
+        <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+            <h2>Thème</h2>
+            <button class="bouton-bascule-container" onclick="theme()"><div class="bouton-bascule"><div id="bouton-bascule-cercle"></div></div></button>
+            <p id="theme-info"></p>
+            <script>themeSelector();</script>
+            <p>Ce paramètre restera appliqué même si vous quittez la page.</p>
+        </div>
+        <br>
+        <div style="text-align: center;">
+            <h2>Réinitialiser</h2>
+            <button class="setting-btn" onclick="reset()"><p>Réinitialiser les paramètres</p></button>
+        </div>
+    </body>
+</html>
