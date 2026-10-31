@@ -240,7 +240,7 @@ img {
     border: 0;
 }
 .bouton-bascule-container {
-    font-size: 32px; /* Pour permettre l'utilisation de l'unité em */
+    font-size: 64px; /* Pour permettre l'utilisation de l'unité em */
     padding: 0;
     border: 0;
     font: inherit;
@@ -396,9 +396,6 @@ a:active, #b-acces:active, .username:active {
     .icons {
         height: 2vmax;
         margin-right: 0.5vmax;
-    }
-    .bouton-bascule-container {
-        font-size: 4vmax;
     }
 }
 @media (min-width: 768px) {
