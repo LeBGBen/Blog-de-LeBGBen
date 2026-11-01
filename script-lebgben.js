@@ -52,6 +52,8 @@ function setTheme(theme) {
 }
 
 function reset() {
-    localStorage.setItem("Theme", "");
-    window.location.href = "index.html";
+    if(confirm("Cela va réinitialiser tous les paramètres et vous renvoyer à la page d'accueil")) {
+        localStorage.setItem("Theme", "");
+        window.location.href = "index.html";
+    }
 }
